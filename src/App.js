@@ -13,15 +13,15 @@ const App = () => {
 };
 
 const Header = () => {
-  return <div>Header</div>;
+  return <div className="App-header">Hello React World</div>;
 };
 
 const Content = () => {
-  return <div>Content</div>;
+  return <div>this is study page for React.</div>;
 };
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return <div>by n4mhoon with jihoonT</div>;
 };
 
 export default App;
@@ -31,6 +31,7 @@ export default App;
 // function
 
 // <Content /> === <Content> </Content>
+
 // <header className="App-header">
 // <img src={logo} className="App-logo" alt="logo" />
 // <p>
