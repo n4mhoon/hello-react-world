@@ -7,21 +7,29 @@ const App = () => {
     <>
       <Header />
       <Content />
-      <Footer />
     </>
   );
 };
 
 const Header = () => {
-  return <div className="App-header">Hello React World</div>;
+  return (
+    <div>
+      Hello React World
+      <br />
+      This is Namhoon's Study Page for React.
+    </div>
+  );
 };
 
 const Content = () => {
-  return <div>this is study page for React.</div>;
-};
+  const [count, setCount] = useState(0);
 
-const Footer = () => {
-  return <div>by n4mhoon with jihoonT</div>;
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  );
 };
 
 export default App;
