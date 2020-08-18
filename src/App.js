@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react';
+import { Global } from './global';
+import { Content } from './Content/Content';
 
 const App = () => {
   return (
     <>
+      <Global />
       <Header />
       <Content />
     </>
@@ -17,17 +18,6 @@ const Header = () => {
       Hello React World
       <br />
       This is Namhoon's Study Page for React.
-    </div>
-  );
-};
-
-const Content = () => {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 };
