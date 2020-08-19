@@ -1,24 +1,15 @@
 import React from 'react';
 import { Global } from './global';
 import { Content } from './Content/Content';
+import { Sidebar } from './Sidebar/Sidebar';
 
 const App = () => {
   return (
     <>
       <Global />
-      <Header />
+      <Sidebar />
       <Content />
     </>
-  );
-};
-
-const Header = () => {
-  return (
-    <div>
-      Hello React World
-      <br />
-      This is Namhoon's Study Page for React.
-    </div>
   );
 };
 
