@@ -1,22 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Introduce } from './Introduce';
+import upArrow from './chevron-up.svg';
 
 export const Content = () => {
   return (
     <ContentWrap>
-      <ContentHeader>header</ContentHeader>
+      <ContentHeader>
+        <span role="img" aria-label="Eyes">
+          👀
+        </span>{' '}
+        introduce
+      </ContentHeader>
       <ContentMain>
-        <ContentImage>image</ContentImage>
-        <ContentInfo>info</ContentInfo>
-        <ContentArticle></ContentArticle>
+        <Introduce />
       </ContentMain>
-      <OnTop></OnTop>
+      <OnTop>
+        <img src={upArrow} className="UpArrow" alt="up" />
+      </OnTop>
     </ContentWrap>
   );
 };
 
 const ContentWrap = styled.div`
-  background: #ff0000;
   width: 100%;
   height: 100%;
   display: flex;
@@ -24,55 +30,33 @@ const ContentWrap = styled.div`
 `;
 
 const ContentHeader = styled.div`
-  background: #ff00ff;
-  height: 48px;
+  background: #d4d1d1;
+  height: 40px;
   width: 100%;
   margin-top: 0;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  padding: 0px 16px;
 `;
 
 const ContentMain = styled.div`
-  background: black;
-`;
-
-const ContentImage = styled.div`
-  background: #1200ff;
-  height: 240px;
-`;
-
-const ContentInfo = styled.div`
-  background: #ff00ff;
-  position: absolute;
-  top: 260px;
-  left: 208px;
-  width: 200px;
-  height: 56px;
-`;
-
-const ContentArticle = styled.div`
-  background: #ff00ff;
+  background: #eeecec;
 `;
 
 const OnTop = styled.div`
-  background: #ff00ff;
+  background: #ffffff;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .UpArrow {
+    width: 24px;
+  }
 `;
 
-// import React, { useState } from 'react';
-// import styled from 'styled-components';
-
-// export const Content = () => {
-//   const [count, setCount] = useState(0);
-
-//   return (
-//     <Div isRed={false}>
-//       <p>You clicked {count} times</p>
-//       <button onClick={() => setCount(count + 1)}>Click me</button>
-//     </Div>
-//   );
-// };
-
-// const Div = styled.div`
 //   background: ${(props) => (props.isRed ? 'red' : 'blue')};
-// `;
