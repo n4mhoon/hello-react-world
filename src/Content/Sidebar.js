@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import MainLogo from '../Assets/logo.svg';
+import { SideBtn } from '../Components/Button';
 
 export const Sidebar = () => {
   return (
@@ -15,9 +15,9 @@ export const Sidebar = () => {
         </p>
       </SidebarTitle>
       <SidebarMenu>
-        <p>introduce</p>
-        <p>works</p>
-        <p>interest</p>
+        <SideBtn>introduce</SideBtn>
+        <SideBtn>works</SideBtn>
+        <SideBtn>interest</SideBtn>
       </SidebarMenu>
     </SidebarWrap>
   );
@@ -42,28 +42,13 @@ const SidebarTitle = styled.div`
     top: 48px;
     padding-left: 24px;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 18px;
+    color: #303437;
   }
 `;
 
 const SidebarMenu = styled.div`
   position: relative;
-  top: 160px;
-  padding-left: 24px;
-  font-size: 16px;
+  padding-left: 32px;
+  top: 200px;
 `;
-
-// <header className="App-header">
-// <img src={logo} className="App-logo" alt="logo" />
-// <p>
-//   Edit <code>src/App.js</code> and save to reload.
-// </p>
-// <a
-//   className="App-link"
-//   href="https://reactjs.org"
-//   target="_blank"
-//   rel="noopener noreferrer"
-// >
-//   Learn React
-// </a>
-// </header>

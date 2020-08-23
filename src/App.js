@@ -1,7 +1,7 @@
 import React from 'react';
 import { Global } from './global';
 import { Content } from './Content/Content';
-import { Sidebar } from './Sidebar/Sidebar';
+import { Sidebar } from './Content/Sidebar';
 
 const App = () => {
   return (
@@ -20,18 +20,3 @@ export default App;
 // function
 
 // <Content /> === <Content> </Content>
-
-// <header className="App-header">
-// <img src={logo} className="App-logo" alt="logo" />
-// <p>
-//   Edit <code>src/App.js</code> and save to reload.
-// </p>
-// <a
-//   className="App-link"
-//   href="https://reactjs.org"
-//   target="_blank"
-//   rel="noopener noreferrer"
-// >
-//   Learn React
-// </a>
-// </header>

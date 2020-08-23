@@ -2,16 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { Introduce } from './Introduce';
 import upArrow from '../Assets/chevron-up.svg';
+import { Header } from './Header';
 
 export const Content = () => {
   return (
     <ContentWrap>
-      <ContentHeader>
-        <span role="img" aria-label="Eyes">
-          👀
-        </span>{' '}
-        introduce
-      </ContentHeader>
+      <Header />
       <ContentMain>
         <Introduce />
       </ContentMain>
@@ -29,19 +25,12 @@ const ContentWrap = styled.div`
   flex-direction: column;
 `;
 
-const ContentHeader = styled.div`
-  background: #d4d1d1;
-  height: 40px;
-  width: 100%;
-  margin-top: 0;
-  padding: 0px 16px;
-`;
-
 const ContentMain = styled.div`
   background: #eeecec;
 `;
 
 const OnTop = styled.div`
+  cursor: pointer;
   background: #ffffff;
   position: fixed;
   bottom: 24px;
