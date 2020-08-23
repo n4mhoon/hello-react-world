@@ -4,33 +4,33 @@ export const Global = createGlobalStyle`
     @font-face {
       font-family: "Spoqa Han Sans";
       font-weight: 200;
-      src : url("./fonts/SpoqaHanSnasThin.woff2") format("woff2"),
-      url("./fonts/SpoqaHanSnasThin.woff") format("woff"),
-      url("./fonts/SpoqaHanSnasThin.ttf") format("truetype");
+      src : url("./Assets/fonts/SpoqaHanSnasThin.woff2") format("woff2"),
+      url("./Assets/fonts/SpoqaHanSnasThin.woff") format("woff"),
+      url("./Assets/fonts/SpoqaHanSnasThin.ttf") format("truetype");
     }
 
     @font-face {
       font-family: "Spoqa Han Sans";
       font-weight: 300;
-      src : url("./fonts/SpoqaHanSnasLight.woff2") format("woff2"),
-      url("./fonts/SpoqaHanSnasLight.woff") format("woff"),
-      url("./fonts/SpoqaHanSnasLight.ttf") format("truetype");
+      src : url("./Assets/fonts/SpoqaHanSnasLight.woff2") format("woff2"),
+      url("./Assets/fonts/SpoqaHanSnasLight.woff") format("woff"),
+      url("./Assets/fonts/SpoqaHanSnasLight.ttf") format("truetype");
     }
 
     @font-face {
       font-family: "Spoqa Han Sans";
       font-weight: 400;
-      src : url("./fonts/SpoqaHanSnasRegular.woff2") format("woff2"),
-      url("./fonts/SpoqaHanSnasRegular.woff") format("woff"),
-      url("./fonts/SpoqaHanSnasRegular.ttf") format("truetype");
+      src : url("./Assets/fonts/SpoqaHanSnasRegular.woff2") format("woff2"),
+      url("./Assets/fonts/SpoqaHanSnasRegular.woff") format("woff"),
+      url("./Assets/fonts/SpoqaHanSnasRegular.ttf") format("truetype");
     }
 
     @font-face {
       font-family: "Spoqa Han Sans";
       font-weight: 500;
-      src : url("./fonts/SpoqaHanSnasBold.woff2") format("woff2"),
-      url("./fonts/SpoqaHanSnasBold.woff") format("woff"),
-      url("./fonts/SpoqaHanSnasBold.ttf") format("truetype");
+      src : url("./Assets/fonts/SpoqaHanSnasBold.woff2") format("woff2"),
+      url("./Assets/fonts/SpoqaHanSnasBold.woff") format("woff"),
+      url("./Assets/fonts/SpoqaHanSnasBold.ttf") format("truetype");
     }
 
     html,

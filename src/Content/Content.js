@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Introduce } from './Introduce';
-import upArrow from './chevron-up.svg';
+import upArrow from '../Assets/chevron-up.svg';
 
 export const Content = () => {
   return (

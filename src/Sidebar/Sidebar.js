@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
-import MainLogo from './logo.svg';
+import MainLogo from '../Assets/logo.svg';
 
 export const Sidebar = () => {
   return (
