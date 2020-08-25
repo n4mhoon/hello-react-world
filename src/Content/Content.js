@@ -3,13 +3,18 @@ import styled from 'styled-components';
 import { Introduce } from './Introduce';
 import upArrow from '../Assets/chevron-up.svg';
 import { Header } from './Header';
+import { Interest } from './Interest';
+import { Works } from './Works';
+import { Route } from 'react-router-dom';
 
 export const Content = () => {
   return (
     <ContentWrap>
       <Header />
       <ContentMain>
-        <Introduce />
+        <Route path={['/', '/introduce']} exact component={Introduce} />
+        <Route path="/interest" exact component={Interest} />
+        <Route path="/works" exact component={Works} />
       </ContentMain>
       <OnTop>
         <img src={upArrow} className="UpArrow" alt="up" />

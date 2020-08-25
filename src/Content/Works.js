@@ -5,8 +5,8 @@ export const Works = () => {
   return (
     <>
       <ContentImage>image</ContentImage>
-      <ContentInfo>info</ContentInfo>
-      <ContentArticle></ContentArticle>
+      {/* <ContentInfo>info</ContentInfo> */}
+      {/* <ContentArticle></ContentArticle> */}
     </>
   );
 };
