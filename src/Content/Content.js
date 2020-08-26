@@ -1,16 +1,18 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import styled from 'styled-components';
 import { Introduce } from './Introduce';
 import upArrow from '../Assets/chevron-up.svg';
-import { Header } from './Header';
+import { HeaderIntroduce, HeaderWorks, HeaderInterest } from './Header';
 import { Interest } from './Interest';
 import { Works } from './Works';
-import { Route } from 'react-router-dom';
 
 export const Content = () => {
   return (
     <ContentWrap>
-      <Header />
+      <Route path={['/', '/introduce']} exact component={HeaderIntroduce} />
+      <Route path="/interest" exact component={HeaderInterest} />
+      <Route path="/works" exact component={HeaderWorks} />
       <ContentMain>
         <Route path={['/', '/introduce']} exact component={Introduce} />
         <Route path="/interest" exact component={Interest} />
@@ -25,14 +27,18 @@ export const Content = () => {
 
 const ContentWrap = styled.div`
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  background: #ebe8e8;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
-const ContentMain = styled.div`
-  background: #eeecec;
-`;
+const ContentMain = styled.div``;
 
 const OnTop = styled.div`
   cursor: pointer;

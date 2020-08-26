@@ -15,9 +15,3 @@ const App = () => {
 };
 
 export default App;
-
-// 컴포넌트를 만들때는 arrow function, Custom Hook을 만들때는 function
-// const App = () => {}
-// function
-
-// <Content /> === <Content> </Content>

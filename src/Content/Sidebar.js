@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import MainLogo from '../Assets/logo.svg';
 import { SideBtn } from '../Components/Button';
@@ -15,9 +16,15 @@ export const Sidebar = () => {
         </p>
       </SidebarTitle>
       <SidebarMenu>
-        <SideBtn>introduce</SideBtn>
-        <SideBtn>works</SideBtn>
-        <SideBtn>interest</SideBtn>
+        <NavLink to="/introduce" className="Menu" activeStyle={SideBtn.active}>
+          <SideBtn>introduce</SideBtn>
+        </NavLink>
+        <NavLink to="/works" className="Menu" activeStyle={SideBtn.active}>
+          <SideBtn>works</SideBtn>
+        </NavLink>
+        <NavLink to="/interest" className="Menu" activeStyle={SideBtn.active}>
+          <SideBtn>interest</SideBtn>
+        </NavLink>
       </SidebarMenu>
     </SidebarWrap>
   );
@@ -51,4 +58,8 @@ const SidebarMenu = styled.div`
   position: relative;
   padding-left: 32px;
   top: 200px;
+
+  .Menu {
+    text-decoration: none;
+  }
 `;

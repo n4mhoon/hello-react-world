@@ -6,8 +6,14 @@ export const SideBtn = styled.div`
   font-weight: 300;
   color: #303437;
   margin-bottom: 40px;
+  text-decoration: unset;
 
   &:hover {
+    color: #182351;
+    font-weight: 400;
+  }
+
+  &:active {
     color: #182351;
     font-weight: 400;
   }
@@ -29,6 +35,7 @@ export const HeadBtn = styled.div`
   transform: translateY(-50%);
 
   &:hover {
-    background: #c4c4c4;
+    background: rgba(24, 35, 81, 0.25);
+    transition: 0.3s;
   }
 `;
