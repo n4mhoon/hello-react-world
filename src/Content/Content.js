@@ -18,12 +18,17 @@ export const Content = () => {
         <Route path="/interest" exact component={Interest} />
         <Route path="/works" exact component={Works} />
       </ContentMain>
-      <OnTop>
+      <OnTop className="upbutton">
         <img src={upArrow} className="UpArrow" alt="up" />
       </OnTop>
     </ContentWrap>
   );
 };
+
+// let goUp = document.getElementsByClassName('upbutton');
+// goUp.addEventListener('click', function () {
+//   window.scrollTo({ top: 0, behavior: 'smooth' });
+// });
 
 const ContentWrap = styled.div`
   width: 100%;

@@ -10,9 +10,49 @@ export const Interest = () => {
           🎨
         </span>
         <h1>interest</h1>
-        <p>Work In Progress...</p>
+        <p className="explain">
+          "다양한 활동에 도전하는 편입니다." <br />
+          <br />
+        </p>
       </ContentInfo>
-      <ContentArticle></ContentArticle>
+      <ContentArticle>
+        <h2>Making contents</h2>
+        <iframe
+          title="ipad opening"
+          src="https://player.vimeo.com/video/374371778"
+          width="640"
+          height="360"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+        <br /> <br /> <br />
+        <h2>Playing Game</h2>
+        <iframe
+          title="beatsaber"
+          src="https://player.vimeo.com/video/375063587"
+          width="640"
+          height="360"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+        <br /> <br /> <br />
+        <h2>Do something.. fun!</h2>
+        <iframe
+          title="play kalimba"
+          src="https://player.vimeo.com/video/375051982"
+          width="640"
+          height="360"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+        <br />
+        <br />
+        <br />
+        <br />
+      </ContentArticle>
     </>
   );
 };
@@ -30,8 +70,19 @@ const ContentInfo = styled.div`
   span {
     font-size: 48px;
   }
+
+  .explain {
+    font-style: italic;
+  }
 `;
 
 const ContentArticle = styled.div`
   background: transparent;
+  position: relative;
+  top: -20px;
+  left: 80px;
+
+  h2 {
+    color: #23255f;
+  }
 `;

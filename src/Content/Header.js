@@ -49,4 +49,5 @@ const ContentHeader = styled.div`
   position: fixed;
   top: 0;
   filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.1));
+  z-index: 1;
 `;

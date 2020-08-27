@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import worksImage from '../Assets/works_image.png';
 
 export const Works = () => {
   return (
@@ -10,9 +11,25 @@ export const Works = () => {
           📌
         </span>
         <h1>works</h1>
-        <p>Work In Progress...</p>
       </ContentInfo>
-      <ContentArticle></ContentArticle>
+      <ContentArticle>
+        <p>
+          진행한 작업들의 자세한 내용이 궁금하신가요? <br /> <br />
+          <a
+            className="notionlink"
+            href="https://www.notion.so/n4mhoon/about-n4mhoon-c6171878d3d24ea3a9859f8f9db2652d"
+          >
+            자세히 보러 가기
+            <span role="img" aria-label="zoom">
+              🔎
+            </span>
+          </a>
+          <br />
+          <br />
+          <br />
+          <img src={worksImage} className="worksImage" alt="works" />
+        </p>
+      </ContentArticle>
     </>
   );
 };
@@ -34,4 +51,22 @@ const ContentInfo = styled.div`
 
 const ContentArticle = styled.div`
   background: transparent;
+  position: relative;
+  top: -40px;
+  left: 80px;
+
+  .worksImage {
+    width: 92%;
+  }
+
+  .notionlink {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3e66b4;
+
+    &:hover {
+      color: #182351;
+      font-weight: bold;
+    }
+  }
 `;
