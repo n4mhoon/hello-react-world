@@ -16,13 +16,34 @@ export const Sidebar = () => {
         </p>
       </SidebarTitle>
       <SidebarMenu>
-        <NavLink to="/introduce" className="Menu" activeStyle={SideBtn.active}>
+        <NavLink
+          to="/introduce"
+          className="Menu"
+          activeStyle={{
+            color: '#182351',
+            fontWeight: 400,
+          }}
+        >
           <SideBtn>introduce</SideBtn>
         </NavLink>
-        <NavLink to="/works" className="Menu" activeStyle={SideBtn.active}>
+        <NavLink
+          to="/works"
+          className="Menu"
+          activeStyle={{
+            color: '#182351',
+            fontWeight: 400,
+          }}
+        >
           <SideBtn>works</SideBtn>
         </NavLink>
-        <NavLink to="/interest" className="Menu" activeStyle={SideBtn.active}>
+        <NavLink
+          to="/interest"
+          className="Menu"
+          activeStyle={{
+            color: '#182351',
+            fontWeight: 400,
+          }}
+        >
           <SideBtn>interest</SideBtn>
         </NavLink>
       </SidebarMenu>
