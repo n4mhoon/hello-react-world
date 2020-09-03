@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 import styled from 'styled-components';
 import { Introduce } from './Introduce';
 import upArrow from '../Assets/chevron-up.svg';
@@ -10,17 +10,20 @@ import { Works } from './Works';
 export const Content = () => {
   return (
     <ContentWrap>
-      <Route path={['/', '/introduce']} exact component={HeaderIntroduce} />
-      <Route path="/interest" exact component={HeaderInterest} />
-      <Route path="/works" exact component={HeaderWorks} />
-      <ContentMain>
-        <Route path={['/', '/introduce']} exact component={Introduce} />
-        <Route path="/interest" exact component={Interest} />
-        <Route path="/works" exact component={Works} />
-      </ContentMain>
-      <OnTop className="upbutton">
-        <img src={upArrow} className="UpArrow" alt="up" />
-      </OnTop>
+      <Switch>
+        <Route path={['/', '/introduce']} exact component={HeaderIntroduce} />
+        <Route path="/interest" exact component={HeaderInterest} />
+        <Route path="/works" exact component={HeaderWorks} />
+        <ContentMain>
+          <Route path={['/', '/introduce']} exact component={Introduce} />
+          <Route path="/interest" exact component={Interest} />
+          <Route path="/works" exact component={Works} />
+        </ContentMain>
+        <OnTop className="upbutton">
+          <img src={upArrow} className="UpArrow" alt="up" />
+        </OnTop>
+        <Redirect path="*" to="/" />
+      </Switch>
     </ContentWrap>
   );
 };

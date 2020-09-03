@@ -2,7 +2,7 @@ import React from 'react';
 import { Global } from './global';
 import { Content } from './Content/Content';
 import { Sidebar } from './Content/Sidebar';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const App = () => {
   return (
