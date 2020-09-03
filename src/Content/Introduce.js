@@ -67,6 +67,7 @@ const ContentArticle = styled.div`
   position: relative;
   top: 0px;
   left: 80px;
+  line-height: 28px;
 
   .Pimage {
     width: 160px;
