@@ -14,6 +14,9 @@ export const Content = () => {
         <Route path={['/', '/introduce']} exact component={HeaderIntroduce} />
         <Route path="/interest" exact component={HeaderInterest} />
         <Route path="/works" exact component={HeaderWorks} />
+        <Redirect path="*" to="/" />
+      </Switch>
+      <Switch>
         <ContentMain>
           <Route path={['/', '/introduce']} exact component={Introduce} />
           <Route path="/interest" exact component={Interest} />
@@ -22,7 +25,6 @@ export const Content = () => {
         <OnTop className="upbutton">
           <img src={upArrow} className="UpArrow" alt="up" />
         </OnTop>
-        <Redirect path="*" to="/" />
       </Switch>
     </ContentWrap>
   );
