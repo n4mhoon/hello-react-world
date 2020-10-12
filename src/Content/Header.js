@@ -1,16 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import { HeadBtn } from '../Components/Button';
+import { Dropdown } from '../Components/Dropdown';
 
 export const HeaderIntroduce = () => {
   return (
     <ContentHeader>
-      <HeadBtn>
-        <span role="img" aria-label="Eyes">
+        <HeadBtn>
+          <span role="img" aria-label="eyes">
           👀
-        </span>{' '}
-        introduce
-      </HeadBtn>
+          </span>{' '}
+          introduce
+        </HeadBtn>
+        <Dropdown />
     </ContentHeader>
   );
 };
@@ -19,8 +21,8 @@ export const HeaderWorks = () => {
   return (
     <ContentHeader>
       <HeadBtn>
-        <span role="img" aria-label="Pin">
-          📌
+        <span role="img" aria-label="eyes">
+        📌
         </span>{' '}
         works
       </HeadBtn>

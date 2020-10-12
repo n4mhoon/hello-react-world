@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import Pimage from '../Assets/profile_image.png';
+import { ContentWrapper } from './Content';
+
 
 export const Introduce = () => {
   return (
     <>
-      <ContentImage></ContentImage>
+      <ContentImage />
+      <ContentWrapper>
       <ContentInfo>
         <span role="img" aria-label="Eyes">
           👀
@@ -44,6 +47,7 @@ export const Introduce = () => {
           E-mail : n4mhoon@gmail.com
         </p>
       </ContentArticle>
+    </ContentWrapper>
     </>
   );
 };
@@ -51,12 +55,12 @@ export const Introduce = () => {
 const ContentImage = styled.div`
   background: linear-gradient(91.1deg, #6e87a0 -7.04%, #e1b7a7 100%);
   height: 240px;
+  width: 100%;
 `;
 
 const ContentInfo = styled.div`
   position: relative;
   top: -40px;
-  left: 80px;
 
   span {
     font-size: 48px;
@@ -65,8 +69,6 @@ const ContentInfo = styled.div`
 
 const ContentArticle = styled.div`
   position: relative;
-  top: 0px;
-  left: 80px;
   line-height: 28px;
 
   .Pimage {

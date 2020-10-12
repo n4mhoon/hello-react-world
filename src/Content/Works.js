@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import worksImage from '../Assets/works_image.png';
+import { ContentWrapper } from './Content';
+
 
 export const Works = () => {
   return (
     <>
-      <ContentImage></ContentImage>
+      <ContentImage />
+      <ContentWrapper>
       <ContentInfo>
         <span role="img" aria-label="Pin">
           📌
@@ -27,12 +30,14 @@ export const Works = () => {
           <br />
           <br />
           <br />
-          <img src={worksImage} className="worksImage" alt="works" />
         </p>
+        <img src={worksImage} className="worksImage" alt="works" />
       </ContentArticle>
+      </ContentWrapper>
     </>
   );
 };
+
 
 const ContentImage = styled.div`
   background: linear-gradient(91.1deg, #3b516e -7.04%, #a5bfbe 100%);
@@ -42,7 +47,6 @@ const ContentImage = styled.div`
 const ContentInfo = styled.div`
   position: relative;
   top: -40px;
-  left: 80px;
 
   span {
     font-size: 48px;
@@ -53,10 +57,9 @@ const ContentArticle = styled.div`
   background: transparent;
   position: relative;
   top: -40px;
-  left: 80px;
 
   .worksImage {
-    width: 92%;
+    width: 100%;
   }
 
   .notionlink {

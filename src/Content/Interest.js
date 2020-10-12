@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ContentWrapper } from './Content';
 
 export const Interest = () => {
   return (
     <>
-      <ContentImage></ContentImage>
+      <ContentImage />
+      <ContentWrapper>
       <ContentInfo>
         <span role="img" aria-label="Pallete">
           🎨
@@ -12,7 +14,6 @@ export const Interest = () => {
         <h1>interest</h1>
         <p className="explain">
           "다양한 활동에 도전하는 편입니다." <br />
-          <br />
         </p>
       </ContentInfo>
       <ContentArticle>
@@ -20,39 +21,37 @@ export const Interest = () => {
         <iframe
           title="ipad opening"
           src="https://player.vimeo.com/video/374371778"
-          width="640"
-          height="360"
-          frameborder="0"
+          width="640px"
+          height="360px"
+          frameBorder="0"
           allow="autoplay; fullscreen"
-          allowfullscreen
         ></iframe>
         <br /> <br /> <br />
         <h2>Playing Game</h2>
         <iframe
           title="beatsaber"
           src="https://player.vimeo.com/video/375063587"
-          width="640"
-          height="360"
-          frameborder="0"
+          width="640px"
+          height="360px"
+          frameBorder="0"
           allow="autoplay; fullscreen"
-          allowfullscreen
         ></iframe>
         <br /> <br /> <br />
         <h2>Do something.. fun!</h2>
         <iframe
           title="play kalimba"
           src="https://player.vimeo.com/video/375051982"
-          width="640"
-          height="360"
-          frameborder="0"
+          width="640px"
+          height="360px"
+          frameBorder="0"
           allow="autoplay; fullscreen"
-          allowfullscreen
         ></iframe>
         <br />
         <br />
         <br />
         <br />
       </ContentArticle>
+      </ContentWrapper>
     </>
   );
 };
@@ -65,8 +64,7 @@ const ContentImage = styled.div`
 const ContentInfo = styled.div`
   position: relative;
   top: -40px;
-  left: 80px;
-
+  
   span {
     font-size: 48px;
   }
@@ -79,8 +77,6 @@ const ContentInfo = styled.div`
 const ContentArticle = styled.div`
   background: transparent;
   position: relative;
-  top: -20px;
-  left: 80px;
 
   h2 {
     color: #23255f;
