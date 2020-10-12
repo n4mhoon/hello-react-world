@@ -49,7 +49,6 @@ export const ContentWrapper = styled.div`
     padding-left: 24px;
     padding-right: 24px;
   }
-
 `;
 
 const ContentMain = styled.div``;

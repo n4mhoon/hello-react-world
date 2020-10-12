@@ -28,7 +28,7 @@ export const Global = createGlobalStyle`
       @font-face {
         font-family: "Spoqa Han Sans";
         font-weight: 500;
-        src : url("../Assets/fonts/SpoqaHanSnasBold.woff2") format("woff2"),
+        src : url("./Assets/fonts/SpoqaHanSnasBold.woff2") format("woff2"),
         url("./Assets/fonts/SpoqaHanSnasBold.woff") format("woff"),
         url("./Assets/fonts/SpoqaHanSnasBold.ttf") format("truetype");
       }

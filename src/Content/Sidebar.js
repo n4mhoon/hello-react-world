@@ -14,7 +14,7 @@ export const Sidebar = () => {
           @n4mhoon
         </p>
       </SidebarTitle>
-      
+
       <SidebarMenu>
         <NavLink
           to="/introduce"
@@ -26,9 +26,9 @@ export const Sidebar = () => {
         >
           introduce
         </NavLink>
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
         <NavLink
           to="/works"
           className="Menu"
@@ -39,9 +39,9 @@ export const Sidebar = () => {
         >
           works
         </NavLink>
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
         <NavLink
           to="/interest"
           className="Menu"
@@ -52,7 +52,6 @@ export const Sidebar = () => {
         >
           interest
         </NavLink>
-
       </SidebarMenu>
     </SidebarWrap>
   );
@@ -88,13 +87,13 @@ const SidebarTitle = styled.div`
 `;
 
 const SidebarMenu = styled.div`
-    font-size: 16px;
-    font-weight: 300;
-    position: relative;
-    top: 200px;
-    color: #303437;
-    margin-bottom: 40px;
-    text-decoration: unset;
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  top: 200px;
+  color: #303437;
+  margin-bottom: 40px;
+  text-decoration: unset;
 
   .Menu {
     color: #303437;

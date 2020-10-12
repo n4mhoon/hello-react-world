@@ -17,9 +17,7 @@ export const SideBtn = styled.div`
     color: #182351;
     font-weight: 400;
   }
-
 `;
-
 
 export const HeadBtn = styled.button`
   cursor: pointer;
@@ -35,14 +33,8 @@ export const HeadBtn = styled.button`
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 
   &:hover {
-    background: rgba(24, 35, 81, 0.25);
-    transition: 0.3s;
-  }
-  &:active {
     background: rgba(24, 35, 81, 0.25);
     transition: 0.3s;
   }
