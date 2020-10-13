@@ -6,14 +6,14 @@ const DropdownStyle = styled.div`
   position: fixed;
   width: 160px;
   height: 120px;
-  left: 8px;
+  left: 7px;
   top: 38px;
   background: #f5f5f5;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   @media only screen and (max-width: 768px) {
-    left: 136px;
+    left: 124px;
   }
 
   .dMenu {
